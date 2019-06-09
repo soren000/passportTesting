@@ -1,0 +1,19 @@
+{{> header}}
+{{> navbar}}
+
+<body>
+    <h1> Hello</h1>
+    {{#if loggedIn}}
+    <form action="/testSubmit" method="post">
+        <input type="text" name="movieName" placeholder="movie name"/>
+        <input type="text" name="movieComment" placeholder="movie comment">
+        <input type="submit" value="Submit">
+    </form>
+    {{/if}}
+
+    {{#unless loggedIn}}
+    <div>To upload files, you have to be logged in.</div>
+    {{/unless}}
+</body>
+
+</html>

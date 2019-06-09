@@ -1,0 +1,13 @@
+<div class="navbar">
+    <div class="leftside">
+        {{#if displayName}}
+            <img src="{{avatar}}" style="display:inline;">
+            <div  style="display:inline;">{{displayName}} </div>
+        {{/if}}
+        {{#unless displayName}}
+            <a href="/login">Steam Log In</a>
+        {{/unless}}
+    </div>
+    <div class="rightside">
+    </div>
+</div>
